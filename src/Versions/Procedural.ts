@@ -1,10 +1,20 @@
 import { createElement } from "react";
 
-const querySelector = (args: string) => document.querySelector(args)
-const Procedural = () => {
+var score = 0;
+function querySelector (args: string) {
+    return document.querySelector(args)
+}
 
-    var score = 0;
+function processClick(){
+    const pointElement = querySelector("#points")
+    if ( pointElement ) {
+        score = score + 1
+        pointElement.innerHTML = String(score);
+    }
+}
 
+
+function Procedural() {
     const Point = createElement("div", {
         style : {
             color: "black",
@@ -26,14 +36,7 @@ const Procedural = () => {
             borderRadius: "50%",
             backgroundColor: "white"
         },
-        onClick: (element) => {
-            const pointElement = querySelector("#points")
-            if ( pointElement ) {
-                score = score + 1
-                pointElement.innerHTML = String(score);
-            }
-
-        }
+        onClick: processClick
     })
 
     const Board = createElement("div", {
