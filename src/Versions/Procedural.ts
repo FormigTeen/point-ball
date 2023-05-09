@@ -1,4 +1,4 @@
-import React, {createElement, useRef} from "react";
+import { createElement } from "react";
 
 const querySelector = (args: string) => document.querySelector(args)
 const Procedural = () => {
