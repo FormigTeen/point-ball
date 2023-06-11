@@ -48,18 +48,18 @@ const Funcional = () => {
 
     const BallFactory = getEmptyProps()
     |> addStyle('position', 'absolute')
-        |> addStyle('top', '50%')
-        |> addStyle('left', '50%')
-        |> addStyle('transform', "translate(-50%, -50%)")
-        |> addStyle('width', '100px')
-        |> addStyle('height', '100px')
-        |> addStyle('borderRadius', '50%')
-        |> addStyle('backgroundColor', 'white')
-        |> addEvent(
-            'onClick',
+    |> addStyle('top', '50%')
+    |> addStyle('left', '50%')
+    |> addStyle('transform', "translate(-50%, -50%)")
+    |> addStyle('width', '100px')
+    |> addStyle('height', '100px')
+    |> addStyle('borderRadius', '50%')
+    |> addStyle('backgroundColor', 'white')
+    |> addEvent(
+        'onClick',
         () => querySelector("#points")|> setInner(getPointsOnState() |> add(1) |> setPointsOnState |> getPointsOnState)
-            )
-        |> getFactoryTo("div")
+    )
+    |> getFactoryTo("div")
 
     const BoardFactory = getEmptyProps()
     |> addStyle("position", "absolute")
@@ -69,10 +69,10 @@ const Funcional = () => {
     |> addStyle("height", "150px")
     |> addStyle("backgroundColor", "white")
     |> addStyle("display", "flex")
-        |> addStyle("justifyContent", "center")
-        |> addStyle("alignItems", "center")
-        |> getFactoryTo("div")
-        |> addChildToFactory(getPointFactory)
+    |> addStyle("justifyContent", "center")
+    |> addStyle("alignItems", "center")
+    |> getFactoryTo("div")
+    |> addChildToFactory(getPointFactory)
 
 
     const BackgroundFactory = getEmptyProps()
