@@ -1,0 +1,13 @@
+{
+  "plugins": [
+    [
+      "@babel/plugin-proposal-pipeline-operator", {
+        "topicToken": "@@",
+        "proposal": "minimal"
+      }
+    ]
+  ],
+  "parserOpts": {
+    "plugins": ["typescript"]
+  }
+}
