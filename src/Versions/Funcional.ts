@@ -1,4 +1,4 @@
-import { createElement } from "react";
+import {createElement, ReactNode} from "react";
 
 var score = 0;
 function querySelector (args: string) {
@@ -13,8 +13,19 @@ function processClick(){
     }
 }
 
+interface ReactAttribute {
+    style?: Record<string, string>
+    id?: string
+}
+const addStyle = (key: string, value: string) => (props: ReactAttribute) => ({...props, style: {...(props.style || {}), [key]: value }})
 
-function Procedural() {
+const addId = (value: string) => (props: ReactAttribute) => ({...props, id: value})
+
+const getEmptyProps = () => ({})
+
+const getFactoryTo = (type: string) => (props: ReactAttribute) => (children: ReactNode[]) => createElement(type, props, ...children)
+
+const Funcional = () => {
     const Point = createElement("div", {
         style : {
             color: "black",
@@ -64,4 +75,5 @@ function Procedural() {
 
     return Background
 }
-export default Procedural
+
+export default Funcional
