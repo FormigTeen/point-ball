@@ -1,5 +1,5 @@
 import React from 'react';
-import Procedural from "./Versions/Procedural";
+//import Procedural from "./Versions/Procedural";
 import Funcional from "./Versions/Funcional";
 
 function App() {
