@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/point-ball/static/css/main.7bfca13a.css",
-    "main.js": "/point-ball/static/js/main.9d40de8b.js",
+    "main.js": "/point-ball/static/js/main.3deab0e1.js",
     "static/js/787.6bebade1.chunk.js": "/point-ball/static/js/787.6bebade1.chunk.js",
     "index.html": "/point-ball/index.html",
     "main.7bfca13a.css.map": "/point-ball/static/css/main.7bfca13a.css.map",
-    "main.9d40de8b.js.map": "/point-ball/static/js/main.9d40de8b.js.map",
+    "main.3deab0e1.js.map": "/point-ball/static/js/main.3deab0e1.js.map",
     "787.6bebade1.chunk.js.map": "/point-ball/static/js/787.6bebade1.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7bfca13a.css",
-    "static/js/main.9d40de8b.js"
+    "static/js/main.3deab0e1.js"
   ]
 }
