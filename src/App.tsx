@@ -1,8 +1,8 @@
 import React from 'react';
 
 import Objeto from './Versions/POO';
-import Procedural from "./Versions/Procedural";
-import Funcional from "./Versions/Funcional";
+//import Procedural from "./Versions/Procedural";
+//import Funcional from "./Versions/Funcional";
 
 function App() {
   //return (<Procedural />);
